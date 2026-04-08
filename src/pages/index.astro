@@ -1,11 +1,320 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="ElevateEdge Consulting | Strategic Growth & Operational Excellence">
+	<!-- Custom cursor -->
+	<div class="cursor-dot hidden md:block"></div>
+
+	<Navigation />
+
+	<!-- Hero Section -->
+	<section class="relative min-h-screen pt-36 pb-24 md:pt-44 overflow-hidden">
+		<!-- Animated gradient orbs -->
+		<div class="orb w-[500px] h-[500px] bg-vibrant-teal/30 top-20 -left-48" style="animation-delay: 0s;"></div>
+		<div class="orb w-[400px] h-[400px] bg-amber/20 bottom-20 -right-48" style="animation-delay: 2s;"></div>
+		<div class="orb w-[300px] h-[300px] bg-rich-blue/20 top-1/2 left-1/2 -translate-x-1/2" style="animation-delay: 4s;"></div>
+
+		<div class="relative max-w-7xl mx-auto px-6 md:px-10">
+			<div class="grid md:grid-cols-2 gap-16 items-center">
+				<div class="reveal-on-scroll">
+					<div
+						class="inline-flex items-center gap-2 bg-vibrant-teal/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 border border-vibrant-teal/20"
+					>
+						<span class="relative flex h-2 w-2">
+							<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-vibrant-teal opacity-75"></span>
+							<span class="relative inline-flex rounded-full h-2 w-2 bg-vibrant-teal"></span>
+						</span>
+						<span class="text-xs font-semibold text-vibrant-teal tracking-wide">STRATEGY-FOCUSED · EXECUTION-DRIVEN</span>
+					</div>
+					<h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+						Growth isn't a<br />
+						<span class="shimmer-text">guessing game.</span><br />
+						<span class="bg-gradient-to-r from-rich-blue to-vibrant-teal bg-clip-text text-transparent">it's a system.</span>
+					</h1>
+					<p class="text-gray-500 text-lg mt-6 leading-relaxed max-w-md">
+						We help business owners and leadership teams align strategy, operations, and execution—so growth becomes intentional, not
+						accidental.
+					</p>
+					<div class="flex flex-wrap gap-4 mt-10">
+						<a
+							href="/contact"
+							class="group relative bg-gradient-to-r from-rich-blue to-vibrant-teal text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
+						>
+							<span class="relative z-10 flex items-center gap-2">
+								Start the conversation <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+							</span>
+							<div
+								class="absolute inset-0 bg-gradient-to-r from-vibrant-teal to-amber opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+							>
+							</div>
+						</a>
+						<a
+							href="/capabilities"
+							class="border-2 border-deep-slate/20 text-deep-slate px-8 py-4 rounded-full font-medium hover:border-vibrant-teal hover:text-vibrant-teal transition-all duration-300"
+						>
+							Explore work →
+						</a>
+					</div>
+
+					<!-- Floating stats row -->
+					<div class="flex gap-8 mt-12 pt-8 border-t border-deep-slate/10">
+						<div><div class="text-3xl font-black text-rich-blue">150+</div><div class="text-xs text-gray-400">companies scaled</div></div>
+						<div><div class="text-3xl font-black text-rich-blue">$2B+</div><div class="text-xs text-gray-400">value created</div></div>
+						<div><div class="text-3xl font-black text-rich-blue">98%</div><div class="text-xs text-gray-400">retention</div></div>
+					</div>
+				</div>
+
+				<div class="relative reveal-on-scroll" style="transition-delay: 0.2s;">
+					<div class="relative perspective-1000">
+						<div class="absolute -inset-4 bg-gradient-to-r from-vibrant-teal/30 to-muted-teal/30 rounded-3xl blur-2xl animate-pulse">
+						</div>
+						<div class="relative tilt-card">
+							<img
+								src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+								alt="Leadership team collaboration"
+								class="rounded-2xl shadow-2xl w-full object-cover h-[500px] object-center"
+							/>
+						</div>
+					</div>
+					<!-- Floating badge -->
+					<div class="absolute -bottom-6 -left-6 glass rounded-xl p-4 shadow-xl animate-float-3d hidden md:block">
+						<div class="flex items-center gap-3">
+							<div class="w-10 h-10 bg-vibrant-teal/20 rounded-full flex items-center justify-center">
+								<i class="fas fa-chart-line text-vibrant-teal"></i>
+							</div>
+							<div>
+								<div class="text-sm font-bold">Operational Excellence</div><div class="text-xs text-gray-500">Proven frameworks</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scroll indicator -->
+		<div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+			<div class="w-6 h-10 border-2 border-deep-slate/30 rounded-full flex justify-center">
+				<div class="w-1 h-2 bg-vibrant-teal rounded-full mt-2 animate-pulse"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Capabilities Section -->
+	<section id="capabilities" class="py-28 relative">
+		<div class="max-w-7xl mx-auto px-6 md:px-10">
+			<div class="text-center mb-16 reveal-on-scroll">
+				<span class="text-vibrant-teal font-mono text-xs tracking-wider bg-vibrant-teal/10 px-4 py-1.5 rounded-full">CAPABILITIES</span>
+				<h2 class="text-4xl md:text-5xl font-black mt-5">Three pillars. <span class="text-rich-blue">One system.</span></h2>
+				<p class="text-gray-500 mt-4 max-w-2xl mx-auto">We build the operational foundation that turns potential into measurable success.</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="gradient-border tilt-card reveal-on-scroll" style="transition-delay: 0.1s;">
+					<div class="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-500">
+						<div
+							class="w-16 h-16 bg-gradient-to-br from-vibrant-teal/10 to-vibrant-teal/5 rounded-2xl flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-chart-line text-3xl text-vibrant-teal"></i>
+						</div>
+						<div class="text-5xl font-black text-vibrant-teal/10 mb-2">01</div>
+						<h3 class="text-2xl font-bold mt-2">Strategic Consulting</h3>
+						<p class="text-gray-500 mt-3 leading-relaxed">
+							Operational excellence, leadership development, and strategic planning that drives performance.
+						</p>
+						<a href="/capabilities" class="inline-flex items-center gap-2 mt-6 text-rich-blue font-medium group">
+							<span>Learn more</span>
+							<i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="gradient-border tilt-card reveal-on-scroll" style="transition-delay: 0.2s;">
+					<div class="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-500">
+						<div class="w-16 h-16 bg-gradient-to-br from-rich-blue/10 to-rich-blue/5 rounded-2xl flex items-center justify-center mb-6">
+							<i class="fas fa-chart-line text-3xl text-rich-blue"></i>
+						</div>
+						<div class="text-5xl font-black text-rich-blue/10 mb-2">02</div>
+						<h3 class="text-2xl font-bold mt-2">Scaling Support</h3>
+						<p class="text-gray-500 mt-3 leading-relaxed">
+							Scalability assessments, process automation, and performance tracking for growth.
+						</p>
+						<a href="/capabilities" class="inline-flex items-center gap-2 mt-6 text-rich-blue font-medium group">
+							<span>Learn more</span>
+							<i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="gradient-border tilt-card reveal-on-scroll" style="transition-delay: 0.3s;">
+					<div class="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-500">
+						<div class="w-16 h-16 bg-gradient-to-br from-amber/10 to-amber/5 rounded-2xl flex items-center justify-center mb-6">
+							<i class="fas fa-chart-line text-3xl text-amber"></i>
+						</div>
+						<div class="text-5xl font-black text-amber/10 mb-2">03</div>
+						<h3 class="text-2xl font-bold mt-2">Investor Readiness</h3>
+						<p class="text-gray-500 mt-3 leading-relaxed">
+							Fundraising strategy, pitch optimization, and market analysis to attract capital.
+						</p>
+						<a href="/capabilities" class="inline-flex items-center gap-2 mt-6 text-rich-blue font-medium group">
+							<span>Learn more</span>
+							<i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Case Study Section -->
+	<section id="case-study" class="relative py-28 overflow-hidden">
+		<div class="absolute inset-0">
+			<img
+				src="https://images.pexels.com/photos/7640820/pexels-photo-7640820.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=2"
+				alt="Case study background"
+				class="w-full h-full object-cover"
+			/>
+			<div class="absolute inset-0 bg-gradient-to-r from-deep-slate/95 via-deep-slate/80 to-transparent"></div>
+		</div>
+
+		<div class="relative max-w-7xl mx-auto px-6 md:px-10">
+			<div class="max-w-2xl reveal-on-scroll">
+				<div class="inline-flex items-center gap-2 bg-amber/20 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm mb-6">
+					<i class="fas fa-star text-amber text-xs"></i>
+					<span class="text-amber font-semibold">FEATURED CASE STUDY</span>
+				</div>
+				<h2 class="text-4xl md:text-5xl font-black text-white leading-tight">Aligning Leadership & Strategy for Scalable Growth</h2>
+				<p class="text-white/80 text-lg mt-5 leading-relaxed">
+					A private equity firm needed to align business functions and structure roles for scale. We provided hands-on advisory that
+					streamlined decision-making and brought clarity to their internal structure.
+				</p>
+				<div class="flex gap-8 mt-8">
+					<div><div class="text-2xl font-bold text-amber">✓ Executive placement</div></div>
+					<div><div class="text-2xl font-bold text-amber">✓ Streamlined ops</div></div>
+				</div>
+				<a
+					href="/case-study"
+					class="inline-flex items-center gap-2 mt-8 text-amber font-semibold border-b-2 border-amber pb-1 hover:gap-3 transition-all group"
+				>
+					Read full case study <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="py-28 bg-white relative">
+		<div class="max-w-7xl mx-auto px-6 md:px-10">
+			<div class="grid lg:grid-cols-2 gap-16 items-center">
+				<div class="reveal-on-scroll">
+					<span class="text-vibrant-teal font-mono text-xs tracking-wider bg-vibrant-teal/10 px-4 py-1.5 rounded-full">ABOUT US</span>
+					<h2 class="text-4xl md:text-5xl font-black mt-5 leading-tight">
+						We don't believe in <span class="text-rich-blue">surface-level strategy.</span>
+					</h2>
+					<p class="text-gray-600 text-lg mt-6 leading-relaxed">
+						We go deep—into your leadership model, operational gaps, and performance blind spots—to design a business that's built to
+						scale.
+					</p>
+					<div class="space-y-3 mt-8">
+						<div class="flex items-center gap-3 group cursor-default">
+							<div class="w-6 h-6 bg-vibrant-teal/20 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+								<i class="fas fa-check text-xs text-vibrant-teal"></i>
+							</div><span>Growth-ready consulting, not just reports</span>
+						</div>
+						<div class="flex items-center gap-3 group cursor-default">
+							<div class="w-6 h-6 bg-vibrant-teal/20 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+								<i class="fas fa-check text-xs text-vibrant-teal"></i>
+							</div><span>High-touch partnership with leadership teams</span>
+						</div>
+						<div class="flex items-center gap-3 group cursor-default">
+							<div class="w-6 h-6 bg-vibrant-teal/20 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+								<i class="fas fa-check text-xs text-vibrant-teal"></i>
+							</div><span>25+ years of executive experience</span>
+						</div>
+					</div>
+					<a href="/about" class="inline-flex items-center gap-2 mt-8 text-rich-blue font-semibold group">
+						Learn about Bravis <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+					</a>
+				</div>
+
+				<div class="reveal-on-scroll" style="transition-delay: 0.2s;">
+					<div class="glass rounded-3xl p-8 shadow-xl relative overflow-hidden">
+						<div class="absolute top-0 right-0 w-32 h-32 bg-vibrant-teal/10 rounded-full blur-2xl"></div>
+						<i class="fas fa-quote-left text-4xl text-vibrant-teal/30 mb-4 block"></i>
+						<p class="text-xl text-deep-slate leading-relaxed font-medium">
+							For almost 10 years, I've valued Bravis' discernment, vision and focus. He doesn't just design high-level plans; he builds
+							the operational frameworks that remove constraints and unlock value.
+						</p>
+						<div class="mt-8 flex items-center gap-4">
+							<div
+								class="w-14 h-14 bg-gradient-to-br from-rich-blue to-vibrant-teal rounded-full flex items-center justify-center text-white font-bold text-xl"
+							>
+								B
+							</div>
+							<div>
+								<div class="font-bold text-deep-slate">Blake White</div><div class="text-sm text-gray-500">
+									President & CFO, Pureous Products
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section id="contact" class="py-28 relative overflow-hidden">
+		<div class="absolute inset-0 bg-gradient-to-br from-deep-slate via-rich-blue to-deep-slate"></div>
+		<div class="orb w-[600px] h-[600px] bg-vibrant-teal/30 top-0 right-0" style="animation-duration: 15s;"></div>
+		<div class="orb w-[400px] h-[400px] bg-amber/20 bottom-0 left-0" style="animation-duration: 12s;"></div>
+
+		<div class="relative max-w-5xl mx-auto px-6 md:px-10 text-center">
+			<div class="reveal-on-scroll">
+				<span class="text-amber font-mono text-xs tracking-wider bg-amber/20 backdrop-blur-sm px-4 py-1.5 rounded-full">
+					START THE CONVERSATION
+				</span>
+				<h2 class="text-4xl md:text-6xl font-black text-white mt-6">Let's talk strategy.</h2>
+				<p class="text-white/80 text-xl mt-4 max-w-2xl mx-auto">
+					Whether you're scaling operations, preparing for a transition, or navigating complex growth—we're ready to dig in and help.
+				</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-6 mt-16 reveal-on-scroll" style="transition-delay: 0.2s;">
+				<div class="glass-dark rounded-2xl p-6 backdrop-blur-md hover:scale-105 transition-all duration-300">
+					<div class="text-3xl font-black text-amber mb-3">01</div>
+					<h4 class="text-white font-bold text-lg">Discovery Call</h4>
+					<p class="text-white/60 text-sm">Understand your goals and challenges</p>
+				</div>
+				<div class="glass-dark rounded-2xl p-6 backdrop-blur-md hover:scale-105 transition-all duration-300">
+					<div class="text-3xl font-black text-amber mb-3">02</div>
+					<h4 class="text-white font-bold text-lg">Strategy Snapshot</h4>
+					<p class="text-white/60 text-sm">Identify optimization opportunities</p>
+				</div>
+				<div class="glass-dark rounded-2xl p-6 backdrop-blur-md hover:scale-105 transition-all duration-300">
+					<div class="text-3xl font-black text-amber mb-3">03</div>
+					<h4 class="text-white font-bold text-lg">Engagement Planning</h4>
+					<p class="text-white/60 text-sm">Outline a results-driven path forward</p>
+				</div>
+			</div>
+
+			<div class="mt-12 reveal-on-scroll" style="transition-delay: 0.3s;">
+				<a
+					href="/contact"
+					class="group relative inline-flex items-center gap-3 bg-white text-deep-slate px-10 py-5 rounded-full text-lg font-bold shadow-2xl hover:shadow-amber/20 transition-all duration-300 overflow-hidden"
+				>
+					<span class="relative z-10">Schedule your strategy call</span>
+					<i class="fas fa-arrow-right relative z-10 group-hover:translate-x-1 transition"></i>
+					<div
+						class="absolute inset-0 bg-gradient-to-r from-amber to-amber/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+					>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
 </Layout>

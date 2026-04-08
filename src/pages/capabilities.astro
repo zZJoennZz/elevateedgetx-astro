@@ -1,0 +1,584 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Capabilities | ElevateEdge Consulting">
+    <!-- Custom cursor -->
+    <div class="cursor-dot hidden md:block"></div>
+
+    <Navigation />
+
+    <!-- Hero Section - Matching index spacing -->
+    <section class="relative min-h-[50vh] pt-36 pb-24 md:pt-44 overflow-hidden">
+        <!-- Animated gradient orbs -->
+        <div class="orb w-[500px] h-[500px] bg-vibrant-teal/30 top-20 -left-48" style="animation-delay: 0s;"></div>
+        <div class="orb w-[400px] h-[400px] bg-amber/20 bottom-20 -right-48" style="animation-delay: 2s;"></div>
+        <div class="orb w-[300px] h-[300px] bg-rich-blue/20 top-1/2 left-1/2 -translate-x-1/2" style="animation-delay: 4s;"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 md:px-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="reveal-on-scroll">
+                    <div
+                        class="inline-flex items-center gap-2 bg-vibrant-teal/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 border border-vibrant-teal/20"
+                    >
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-vibrant-teal opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-vibrant-teal"></span>
+                        </span>
+                        <span class="text-xs font-semibold text-vibrant-teal tracking-wide">WHAT WE DO</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-6">Capabilities</h1>
+
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                        Unlock Growth with Strategic Consulting, Scalable Systems, and Investor Readiness
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-deep-slate/30 rounded-full flex justify-center">
+                <div class="w-1 h-2 bg-vibrant-teal rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabbed Capabilities Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <!-- Tab Headers -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 border-b border-gray-200">
+                <button
+                    class="tab-btn px-8 py-4 text-lg font-semibold transition-all duration-300 border-b-2 border-transparent hover:text-vibrant-teal"
+                    data-tab="strategic"
+                >
+                    Strategic Consulting
+                </button>
+                <button
+                    class="tab-btn px-8 py-4 text-lg font-semibold transition-all duration-300 border-b-2 border-transparent hover:text-vibrant-teal"
+                    data-tab="scaling"
+                >
+                    Scaling Support
+                </button>
+                <button
+                    class="tab-btn px-8 py-4 text-lg font-semibold transition-all duration-300 border-b-2 border-transparent hover:text-vibrant-teal"
+                    data-tab="investor"
+                >
+                    Investor Readiness
+                </button>
+            </div>
+
+            <!-- Tab Content: Strategic Consulting -->
+            <div id="strategic-tab" class="tab-content reveal-on-scroll">
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <!-- Image -->
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-vibrant-teal/30 to-rich-blue/30 rounded-3xl blur-2xl animate-pulse"></div>
+                        <div class="relative tilt-card">
+                            <img
+                                src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&dpr=2"
+                                alt="Strategic Consulting"
+                                class="rounded-2xl shadow-2xl w-full object-cover h-[600px] object-center"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-black mb-6 text-deep-slate">Strategic Consulting</h2>
+
+                        <div class="space-y-6">
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-vibrant-teal/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-vibrant-teal font-bold text-xl">01</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Operational Excellence</h3>
+                                    <p class="text-gray-600">
+                                        Optimize your processes, people, and systems to increase performance and eliminate inefficiencies.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-rich-blue/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-rich-blue font-bold text-xl">02</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Leadership & Culture Development</h3>
+                                    <p class="text-gray-600">
+                                        Align leadership and company culture to drive consistent results and support long-term transformation.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-amber/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-amber font-bold text-xl">03</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Change Management</h3>
+                                    <p class="text-gray-600">
+                                        Navigate change confidently with expert implementation support and proven transformation strategies.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-muted-teal/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-muted-teal font-bold text-xl">04</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Strategic Planning</h3>
+                                    <p class="text-gray-600">
+                                        Build roadmaps that align with your business vision and adapt to your evolving market conditions.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-vibrant-teal/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-vibrant-teal font-bold text-xl">05</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Crisis Readiness</h3>
+                                    <p class="text-gray-600">
+                                        Increase your resilience with tailored preparedness plans that help you lead through uncertainty.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Scaling Support -->
+            <div id="scaling-tab" class="tab-content reveal-on-scroll" style="display: none;">
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <!-- Image -->
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-vibrant-teal/30 to-rich-blue/30 rounded-3xl blur-2xl animate-pulse"></div>
+                        <div class="relative tilt-card">
+                            <img
+                                src="https://images.pexels.com/photos/4427818/pexels-photo-4427818.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&dpr=2"
+                                alt="Scaling Support"
+                                class="rounded-2xl shadow-2xl w-full object-cover h-[600px] object-center"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-black mb-6 text-deep-slate">Scaling Support</h2>
+
+                        <div class="space-y-6">
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-vibrant-teal/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-vibrant-teal font-bold text-xl">01</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Scalability Assessments</h3>
+                                    <p class="text-gray-600">
+                                        Identify bottlenecks and missed opportunities with a comprehensive review of your current infrastructure.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-rich-blue/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-rich-blue font-bold text-xl">02</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Process Automation & Optimization</h3>
+                                    <p class="text-gray-600">
+                                        Upgrade how your business runs—automate repetitive tasks and streamline operations for scale.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-amber/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-amber font-bold text-xl">03</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Performance Tracking Systems</h3>
+                                    <p class="text-gray-600">
+                                        Get real-time insights into what's working—and where you're leaving money on the table.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-muted-teal/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-muted-teal font-bold text-xl">04</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Team & Role Optimization</h3>
+                                    <p class="text-gray-600">
+                                        Build the right structure for growth by aligning roles and responsibilities with your business goals.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-vibrant-teal/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-vibrant-teal font-bold text-xl">05</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Exit Planning Support</h3>
+                                    <p class="text-gray-600">
+                                        Position your company for acquisition or leadership transition with strategy-first advisory support.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Investor Readiness -->
+            <div id="investor-tab" class="tab-content reveal-on-scroll" style="display: none;">
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <!-- Image -->
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-vibrant-teal/30 to-rich-blue/30 rounded-3xl blur-2xl animate-pulse"></div>
+                        <div class="relative tilt-card">
+                            <img
+                                src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&dpr=2"
+                                alt="Investor Readiness"
+                                class="rounded-2xl shadow-2xl w-full object-cover h-[600px] object-center"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-black mb-6 text-deep-slate">Investor Readiness</h2>
+
+                        <div class="space-y-6">
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-vibrant-teal/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-vibrant-teal font-bold text-xl">01</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Investor Strategy & Outreach</h3>
+                                    <p class="text-gray-600">
+                                        We connect you with aligned investors and build a custom outreach plan that supports your funding goals.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-rich-blue/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-rich-blue font-bold text-xl">02</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Fundraising Strategy Development</h3>
+                                    <p class="text-gray-600">
+                                        We help you create and execute a capital raise strategy that includes pitch development and investor
+                                        targeting.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-amber/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-amber font-bold text-xl">03</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Pitch Deck Optimization</h3>
+                                    <p class="text-gray-600">
+                                        Refine your message with a pitch deck that speaks the investor's language—and gets results.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 group">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-muted-teal/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition"
+                                >
+                                    <span class="text-muted-teal font-bold text-xl">04</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 text-deep-slate">Market & Risk Analysis</h3>
+                                    <p class="text-gray-600">
+                                        Understand investor concerns and position your business with clarity, confidence, and competitive insights.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Cards Section -->
+    <section
+        class="bg-gradient-to-br from-deep-slate via-rich-blue to-deep-slate relative overflow-hidden"
+        style="padding-top: 3rem; padding-bottom: 3rem;"
+    >
+        <div class="orb w-[600px] h-[600px] bg-vibrant-teal/30 top-0 right-0" style="animation-duration: 15s;"></div>
+        <div class="orb w-[400px] h-[400px] bg-amber/20 bottom-0 left-0" style="animation-duration: 12s;"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 md:px-10">
+            <div class="text-center mb-12 reveal-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Elevate Your Edge</h2>
+                <p class="text-white/80 text-lg max-w-2xl mx-auto">Fuel Growth, Lead with Precision, Scale Intentionally</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group reveal-on-scroll">
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img
+                            src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                            alt="Growth-Ready Operation"
+                            class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div class="bg-white/10 backdrop-blur-sm p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Build a Growth-Ready Operation</h3>
+                            <p class="text-white/70 text-sm">
+                                Lay the foundation to scale with precision and confidence—without sacrificing what's already working.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img
+                            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                            alt="Leadership Clarity"
+                            class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div class="bg-white/10 backdrop-blur-sm p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Gain Leadership Clarity</h3>
+                            <p class="text-white/70 text-sm">
+                                From culture to cash flow, we help leaders step into their next level of ownership and impact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img
+                            src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                            alt="Performance Potential"
+                            class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div class="bg-white/10 backdrop-blur-sm p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Unlock Performance Potential</h3>
+                            <p class="text-white/70 text-sm">
+                                Align people, systems, and strategy to drive better decisions, faster execution, and greater profitability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group reveal-on-scroll" style="transition-delay: 0.3s;">
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img
+                            src="https://images.pexels.com/photos/669612/pexels-photo-669612.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                            alt="Strategic Capital"
+                            class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div class="bg-white/10 backdrop-blur-sm p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Attract & Align with Strategic Capital</h3>
+                            <p class="text-white/70 text-sm">
+                                Position your business for growth, partnership, or acquisition by showing up as a confident and credible investment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-white" style="padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="max-w-4xl mx-auto px-6 md:px-10">
+            <div class="text-center mb-12 reveal-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-black text-deep-slate mb-4">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-xl overflow-hidden reveal-on-scroll">
+                    <button
+                        class="faq-btn w-full text-left px-6 py-4 font-semibold text-deep-slate bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center"
+                    >
+                        <span>What types of businesses do you work with?</span>
+                        <i class="fas fa-chevron-down text-vibrant-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 py-4 text-gray-600 border-t border-gray-200 hidden">
+                        We work with growth-minded companies, primarily mid-sized businesses in the manufacturing, oil & gas, private equity, and
+                        service sectors.
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <button
+                        class="faq-btn w-full text-left px-6 py-4 font-semibold text-deep-slate bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center"
+                    >
+                        <span>What does a typical engagement look like?</span>
+                        <i class="fas fa-chevron-down text-vibrant-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 py-4 text-gray-600 border-t border-gray-200 hidden">
+                        Engagements begin with discovery and assessment, followed by a tailored action plan and ongoing implementation support. We
+                        offer fractional advisory, full-scope project work, and strategic workshops depending on your needs.
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <button
+                        class="faq-btn w-full text-left px-6 py-4 font-semibold text-deep-slate bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center"
+                    >
+                        <span>Are your services limited to the Dallas-Fort Worth area?</span>
+                        <i class="fas fa-chevron-down text-vibrant-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 py-4 text-gray-600 border-t border-gray-200 hidden">
+                        Not at all. While we are based in DFW, we serve clients nationwide and have worked with leadership teams across multiple
+                        states and industries.
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden reveal-on-scroll" style="transition-delay: 0.3s;">
+                    <button
+                        class="faq-btn w-full text-left px-6 py-4 font-semibold text-deep-slate bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center"
+                    >
+                        <span>What are your core areas of expertise?</span>
+                        <i class="fas fa-chevron-down text-vibrant-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 py-4 text-gray-600 border-t border-gray-200 hidden">
+                        Our specialties include operational optimization, strategic scaling, leadership alignment, exit planning, and preparing
+                        businesses for investor conversations.
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden reveal-on-scroll" style="transition-delay: 0.4s;">
+                    <button
+                        class="faq-btn w-full text-left px-6 py-4 font-semibold text-deep-slate bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center"
+                    >
+                        <span>Do we need to be actively seeking investment or facing a specific crisis to engage with ElevateEdge?</span>
+                        <i class="fas fa-chevron-down text-vibrant-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6 py-4 text-gray-600 border-t border-gray-200 hidden">
+                        No, you don't need to be in crisis or actively raising capital to benefit from our work. In fact, some of our most impactful
+                        engagements happen when leaders are simply sensing that "what got us here won't get us there."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding-top: 3rem; padding-bottom: 3rem;" class="bg-gradient-to-r from-deep-slate to-rich-blue relative overflow-hidden">
+        <div class="orb w-[400px] h-[400px] bg-vibrant-teal/30 top-0 right-0" style="animation-duration: 15s;"></div>
+
+        <div class="relative max-w-4xl mx-auto px-6 md:px-10 text-center">
+            <div class="reveal-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Let's Build What's Next</h2>
+                <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
+                    Ready to scale your business, tighten operations, or attract the right investors? Let's make it happen.
+                </p>
+                <a
+                    href="/contact"
+                    class="group relative inline-flex items-center gap-3 bg-white text-deep-slate px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
+                >
+                    <span class="relative z-10">Book a Strategy Call</span>
+                    <i class="fas fa-arrow-right relative z-10 group-hover:translate-x-1 transition"></i>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-amber to-amber/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    >
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+
+    <script is:inline>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+
+        // Set first tab as active by default
+        if (tabs.length > 0) {
+            tabs[0].classList.add('border-vibrant-teal', 'text-vibrant-teal');
+        }
+
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+
+                // Update active tab styling
+                tabs.forEach((t) => {
+                    t.classList.remove('border-vibrant-teal', 'text-vibrant-teal');
+                    t.classList.add('border-transparent');
+                });
+                tab.classList.add('border-vibrant-teal', 'text-vibrant-teal');
+                tab.classList.remove('border-transparent');
+
+                // Show selected content
+                contents.forEach((content) => {
+                    content.style.display = 'none';
+                });
+
+                const activeContent = document.getElementById(`${tabId}-tab`);
+                if (activeContent) {
+                    activeContent.style.display = 'block';
+                }
+            });
+        });
+
+        // FAQ Accordion functionality
+        const faqBtns = document.querySelectorAll('.faq-btn');
+
+        faqBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+
+                // Toggle current FAQ
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</Layout>

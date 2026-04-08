@@ -1,0 +1,398 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Government Growth & Execution | ElevateEdge Consulting">
+    <!-- Custom cursor -->
+    <div class="cursor-dot hidden md:block"></div>
+
+    <Navigation />
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[70vh] pt-36 pb-24 md:pt-44 overflow-hidden">
+        <!-- Animated gradient orbs -->
+        <div class="orb w-[500px] h-[500px] bg-vibrant-teal/30 top-20 -left-48" style="animation-delay: 0s;"></div>
+        <div class="orb w-[400px] h-[400px] bg-amber/20 bottom-20 -right-48" style="animation-delay: 2s;"></div>
+        <div class="orb w-[300px] h-[300px] bg-rich-blue/20 top-1/2 left-1/2 -translate-x-1/2" style="animation-delay: 4s;"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 md:px-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal-on-scroll">
+                    <div
+                        class="inline-flex items-center gap-2 bg-vibrant-teal/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 border border-vibrant-teal/20"
+                    >
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-vibrant-teal opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-vibrant-teal"></span>
+                        </span>
+                        <span class="text-xs font-semibold text-vibrant-teal tracking-wide">GOVERNMENT GROWTH & EXECUTION</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-6">
+                        Accelerating federal
+                        <span class="shimmer-text">mission readiness</span>
+                        <br />with strategic operational leadership
+                    </h1>
+
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        We don't chase vanity metrics—we build efficient systems, strategic alignment, and repeatable execution for defense & federal
+                        agencies. The same operational discipline that strengthens federal mission readiness rebuilds American manufacturing capacity.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a
+                            href="/contact"
+                            class="group relative bg-gradient-to-r from-rich-blue to-vibrant-teal text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                        >
+                            <span class="relative z-10 flex items-center gap-2">
+                                Start the conversation <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="relative tilt-card">
+                        <img
+                            src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&dpr=2"
+                            alt="Federal mission readiness"
+                            class="rounded-2xl shadow-2xl w-full object-cover h-[450px] object-center"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-deep-slate/30 rounded-full flex justify-center">
+                <div class="w-1 h-2 bg-vibrant-teal rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="grid lg:grid-cols-3 gap-8 items-start">
+                <!-- Founder Info -->
+                <div class="reveal-on-scroll lg:col-span-2">
+                    <div class="bg-gradient-to-br from-deep-slate/5 to-rich-blue/5 rounded-2xl p-8">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-20 h-20 bg-gradient-to-br from-rich-blue to-vibrant-teal rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
+                            >
+                                B
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-deep-slate">Bravis Brown, MBA</h3>
+                                <p class="text-gray-500">Founder | 25+ years in manufacturing, oil & gas, and industrial service sectors</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 text-gray-600">
+                            <p><i class="fas fa-envelope text-vibrant-teal w-6"></i> Bravis@ElevateEdgeTX.com</p>
+                            <p><i class="fas fa-phone text-vibrant-teal w-6"></i> (432) 254-8288</p>
+                            <p><i class="fas fa-map-marker-alt text-vibrant-teal w-6"></i> Fort Worth, TX (nationwide)</p>
+                            <p><i class="fas fa-building text-vibrant-teal w-6"></i> ElevateEdge Consulting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certs -->
+                <div class="reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg">
+                        <h4 class="font-bold text-deep-slate mb-3">Certifications & IDs</h4>
+                        <div class="space-y-2 text-sm">
+                            <p><span class="font-semibold">SDVOSB:</span> (pending)</p>
+                            <p><span class="font-semibold">CMMC Level 1</span></p>
+                            <p><span class="font-semibold">CAGE:</span> 18DQ0</p>
+                            <p><span class="font-semibold">NAICS:</span> 541611, 541618, 541614, 541715</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Profile Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal-on-scroll">
+                    <div class="inline-flex items-center gap-2 bg-vibrant-teal/10 px-4 py-1.5 rounded-full mb-4">
+                        <span class="text-xs font-semibold text-vibrant-teal">— COMPANY PROFILE</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 text-deep-slate">Building operating systems for federal growth</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        ElevateEdge Consulting builds operating systems that turn federal growth from guesswork into execution cadence. We embed KPI
+                        governance and documentation discipline into every phase, from pilot-to-scale, so program execution becomes intentional,
+                        repeatable, and measurable.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        We bring that same execution discipline to growth-minded manufacturers building the domestic supply chains critical to
+                        national economic security. Our clients don't get reports; they get infrastructure that eliminates performance blind spots and
+                        unlocks scalable mission success.
+                    </p>
+                </div>
+
+                <div class="reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+                            <div class="text-3xl font-black text-vibrant-teal mb-2">Veteran-owned</div>
+                            <div class="text-sm text-gray-500">Operator-led leadership</div>
+                        </div>
+                        <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+                            <div class="text-3xl font-black text-rich-blue mb-2">2023</div>
+                            <div class="text-sm text-gray-500">Founded (HQ Fort Worth, TX)</div>
+                        </div>
+                        <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+                            <div class="text-3xl font-black text-amber mb-2">Nationwide</div>
+                            <div class="text-sm text-gray-500">Coverage + on-site as needed</div>
+                        </div>
+                        <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+                            <div class="text-xl font-black text-deep-slate mb-2">Diagnose → Design → Deploy</div>
+                            <div class="text-sm text-gray-500">Proven methodology</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Methodology Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="text-center mb-12 reveal-on-scroll">
+                <div class="inline-flex items-center gap-2 bg-vibrant-teal/10 px-4 py-1.5 rounded-full mb-4">
+                    <span class="text-xs font-semibold text-vibrant-teal">— 3D METHODOLOGY</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-black text-deep-slate mb-4">Diagnose. Design. Deploy.</h2>
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+                    My methodology is Diagnose, Design, Deploy: identify the real constraint, build the right operating fix, and install it into the
+                    business until performance becomes repeatable.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gradient-border tilt-card reveal-on-scroll text-center">
+                    <div class="bg-white rounded-2xl p-8 h-full">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-vibrant-teal/20 to-vibrant-teal/5 rounded-2xl flex items-center justify-center mx-auto mb-6"
+                        >
+                            <i class="fas fa-search text-4xl text-vibrant-teal"></i>
+                        </div>
+                        <div class="text-6xl font-black text-vibrant-teal/20 mb-2">01</div>
+                        <h3 class="text-2xl font-bold mb-3 text-deep-slate">Diagnose</h3>
+                        <p class="text-gray-500">
+                            Identify the true bottlenecks, waste, execution gaps, and hidden capacity limiting flow, margin, and scale.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gradient-border tilt-card reveal-on-scroll text-center" style="transition-delay: 0.1s;">
+                    <div class="bg-white rounded-2xl p-8 h-full">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-rich-blue/20 to-rich-blue/5 rounded-2xl flex items-center justify-center mx-auto mb-6"
+                        >
+                            <i class="fas fa-drafting-compass text-4xl text-rich-blue"></i>
+                        </div>
+                        <div class="text-6xl font-black text-rich-blue/20 mb-2">02</div>
+                        <h3 class="text-2xl font-bold mb-3 text-deep-slate">Design</h3>
+                        <p class="text-gray-500">
+                            Build the right operating systems, structure, and controls to standardize performance and remove dependency on heroics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gradient-border tilt-card reveal-on-scroll text-center" style="transition-delay: 0.2s;">
+                    <div class="bg-white rounded-2xl p-8 h-full">
+                        <div class="w-20 h-20 bg-gradient-to-br from-amber/20 to-amber/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-rocket text-4xl text-amber"></i>
+                        </div>
+                        <div class="text-6xl font-black text-amber/20 mb-2">03</div>
+                        <h3 class="text-2xl font-bold mb-3 text-deep-slate">Deploy</h3>
+                        <p class="text-gray-500">
+                            Install the change into daily operations through team adoption, dashboards, accountability, and execution rhythm—until it
+                            becomes the new normal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government-Ready Foundation Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="text-center mb-12 reveal-on-scroll">
+                <div class="inline-flex items-center gap-2 bg-vibrant-teal/10 px-4 py-1.5 rounded-full mb-4">
+                    <span class="text-xs font-semibold text-vibrant-teal">— GOVERNMENT-READY FOUNDATION</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-black text-deep-slate mb-4">Built for mission-critical success</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="reveal-on-scroll bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img
+                        src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                        alt="Servant leadership"
+                        class="w-full h-56 object-cover"
+                    />
+                    <div class="p-6">
+                        <i class="fas fa-hands-helping text-3xl text-vibrant-teal mb-4 block"></i>
+                        <h3 class="text-xl font-bold mb-2 text-deep-slate">Servant leadership in action</h3>
+                        <p class="text-gray-500">Empowering mission-critical teams through operational alignment, not top-down mandates.</p>
+                    </div>
+                </div>
+
+                <div class="reveal-on-scroll bg-white rounded-2xl overflow-hidden shadow-lg" style="transition-delay: 0.1s;">
+                    <img
+                        src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                        alt="Strategic infrastructure"
+                        class="w-full h-56 object-cover"
+                    />
+                    <div class="p-6">
+                        <i class="fas fa-building text-3xl text-rich-blue mb-4 block"></i>
+                        <h3 class="text-xl font-bold mb-2 text-deep-slate">Strategic infrastructure</h3>
+                        <p class="text-gray-500">
+                            Long-term frameworks that make execution repeatable, not short-term fixes. Built for consistency and efficiency under
+                            pressure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reveal-on-scroll bg-white rounded-2xl overflow-hidden shadow-lg" style="transition-delay: 0.2s;">
+                    <img
+                        src="https://images.pexels.com/photos/669612/pexels-photo-669612.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                        alt="Continuous optimization"
+                        class="w-full h-56 object-cover"
+                    />
+                    <div class="p-6">
+                        <i class="fas fa-chart-line text-3xl text-amber mb-4 block"></i>
+                        <h3 class="text-xl font-bold mb-2 text-deep-slate">Continuous optimization</h3>
+                        <p class="text-gray-500">Embedding adaptability through flow-first methodology & CSA-ready pilots (30-90 days).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Federal Agencies Section -->
+    <section style="padding-top: 3rem; padding-bottom: 3rem;" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal-on-scroll">
+                    <div class="inline-flex items-center gap-2 bg-vibrant-teal/10 px-4 py-1.5 rounded-full mb-4">
+                        <span class="text-xs font-semibold text-vibrant-teal">— FEDERAL AGENCIES & DEFENSE PRIMES</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 text-deep-slate">Trusted by mission-critical organizations</h2>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition">
+                            <i class="fas fa-check-circle text-vibrant-teal text-xl"></i>
+                            <span class="font-semibold text-deep-slate">Department of Veterans Affairs</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition">
+                            <i class="fas fa-check-circle text-vibrant-teal text-xl"></i>
+                            <span class="font-semibold text-deep-slate">Department of Defense (DoD)</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition">
+                            <i class="fas fa-check-circle text-vibrant-teal text-xl"></i>
+                            <span class="font-semibold text-deep-slate">Defense Logistics Agency</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-gradient-to-br from-deep-slate to-rich-blue rounded-2xl text-white">
+                        <h4 class="text-xl font-bold mb-3">Engagement Model</h4>
+                        <p class="text-white/90 mb-2">✓ Side-by-side with leadership — no reports that collect dust</p>
+                        <p class="text-white/90">
+                            ✓ CSA-ready pilots: 30-90 days, outcome-based, clear path to scale — delivered through our Diagnose → Design → Deploy
+                            methodology
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <img
+                        src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2"
+                        alt="Federal agencies"
+                        class="rounded-2xl shadow-2xl w-full object-cover h-[400px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section style="padding-top: 3rem; padding-bottom: 3rem;" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal-on-scroll order-2 lg:order-1">
+                    <img
+                        src="https://images.pexels.com/photos/4427818/pexels-photo-4427818.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2"
+                        alt="Industries"
+                        class="rounded-2xl shadow-2xl w-full object-cover h-[400px]"
+                    />
+                </div>
+
+                <div class="reveal-on-scroll order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-2 bg-vibrant-teal/10 px-4 py-1.5 rounded-full mb-4">
+                        <span class="text-xs font-semibold text-vibrant-teal">— INDUSTRIES & ENGAGEMENTS</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 text-deep-slate">Serving complex operations</h2>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-industry text-vibrant-teal text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-deep-slate">Manufacturing, Oil & Gas, and Industrial service sectors</h4>
+                                <p class="text-gray-500">Specialized in complex operations and scalable systems</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a
+                        href="/contact"
+                        class="inline-flex items-center gap-2 bg-gradient-to-r from-rich-blue to-vibrant-teal text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                    >
+                        Discuss your mission needs <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding-top: 3rem; padding-bottom: 3rem;" class="bg-gradient-to-r from-deep-slate to-rich-blue relative overflow-hidden">
+        <div class="orb w-[400px] h-[400px] bg-vibrant-teal/30 top-0 right-0" style="animation-duration: 15s;"></div>
+
+        <div class="relative max-w-4xl mx-auto px-6 md:px-10 text-center">
+            <div class="reveal-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Ready to accelerate your federal mission readiness?</h2>
+                <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
+                    Let's discuss how our Diagnose → Design → Deploy methodology can transform your operational execution.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a
+                        href="/contact"
+                        class="group relative inline-flex items-center gap-3 bg-white text-deep-slate px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
+                    >
+                        <span class="relative z-10">Start the conversation</span>
+                        <i class="fas fa-arrow-right relative z-10 group-hover:translate-x-1 transition"></i>
+                    </a>
+                    <a
+                        href="mailto:Bravis@ElevateEdgeTX.com"
+                        class="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-deep-slate transition-all duration-300"
+                    >
+                        <i class="fas fa-envelope"></i> Bravis@ElevateEdgeTX.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

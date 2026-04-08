@@ -1,0 +1,75 @@
+---
+// Navigation component
+---
+
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl z-50 transition-all duration-300" id="navbar">
+    <div class="glass rounded-2xl shadow-xl px-6 md:px-8 py-3 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 group">
+            <img src="/img/elevate-edge-tx-logo.webp" style="width: 250px;" class="p-2" alt="Elevate Edge TX Logo" />
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            <a
+                href="/capabilities"
+                class="text-deep-slate/70 hover:text-vibrant-teal text-sm font-medium transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-vibrant-teal after:transition-all hover:after:w-full"
+            >
+                Capabilities
+            </a>
+            <a
+                href="/case-study"
+                class="text-deep-slate/70 hover:text-vibrant-teal text-sm font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-vibrant-teal hover:after:w-full"
+            >
+                Case Study
+            </a>
+            <a
+                href="/about-us"
+                class="text-deep-slate/70 hover:text-vibrant-teal text-sm font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-vibrant-teal hover:after:w-full"
+            >
+                About
+            </a>
+            <a
+                href="/contact"
+                class="bg-gradient-to-r from-vibrant-teal to-rich-blue text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+                Get in touch →
+            </a>
+        </div>
+        <button class="md:hidden text-deep-slate" id="menuBtn">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+    </div>
+    <div class="md:hidden hidden glass rounded-2xl mt-2 px-6 py-4" id="mobileMenu">
+        <div class="flex flex-col gap-3">
+            <a href="/capabilities" class="text-deep-slate py-2 font-medium">Capabilities</a>
+            <a href="/case-study" class="text-deep-slate py-2 font-medium">Case Study</a>
+            <a href="/about" class="text-deep-slate py-2 font-medium">About</a>
+            <a href="/contact" class="bg-gradient-to-r from-vibrant-teal to-rich-blue text-white text-center px-5 py-2.5 rounded-full mt-2">
+                Get in touch →
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // Mobile menu functionality with null checks
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Navbar background on scroll with null check
+    const nav = document.getElementById('navbar');
+
+    if (nav) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scale-95');
+            } else {
+                nav.classList.remove('scale-95');
+            }
+        });
+    }
+</script>

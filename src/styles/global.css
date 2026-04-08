@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+    --color-deep-slate: #121063;
+    --color-rich-blue: #1E65A7;
+    --color-muted-teal: #66B0BE;
+    --color-vibrant-teal: #25B396;
+    --color-amber: #F1A104;
+}
+
+/* Glowing orb animation */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  animation: orbFloat 12s ease-in-out infinite;
+}
+
+@keyframes orbFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+/* Glass morphism utility */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+    background: rgba(43, 81, 108, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Animated gradient border */
+.gradient-border {
+    position: relative;
+    background: white;
+    border-radius: 1.5rem;
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, #25B396, #1E65A7, #F1A104);
+    border-radius: 1.6rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.gradient-border:hover::before {
+    opacity: 1;
+}
+
+/* 3D tilt effect container */
+.tilt-card {
+    transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    transform-style: preserve-3d;
+}
+
+.tilt-card:hover {
+    transform: translateY(-8px) rotateX(2deg) rotateY(2deg);
+}
+
+/* Custom cursor dot */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: #25B396;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+    mix-blend-mode: difference;
+}
+
+.cursor-dot.active {
+    transform: scale(3);
+    background: #F1A104;
+}
+
+/* Smooth scroll reveal */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Shimmer text effect */
+.shimmer-text {
+    background: linear-gradient(120deg, #2B516C 20%, #25B396 40%, #F1A104 60%, #2B516C 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}

@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import TestimonialSlider from '../components/TestimonialSlider.astro';
+---
+
+<Layout title="Case Studies | ElevateEdge Consulting">
+    <!-- Custom cursor -->
+    <div class="cursor-dot hidden md:block"></div>
+
+    <Navigation />
+
+    <!-- Hero Section - Matching index spacing -->
+    <section class="relative min-h-[60vh] pt-36 pb-24 md:pt-44 overflow-hidden">
+        <!-- Animated gradient orbs -->
+        <div class="orb w-[500px] h-[500px] bg-vibrant-teal/30 top-20 -left-48" style="animation-delay: 0s;"></div>
+        <div class="orb w-[400px] h-[400px] bg-amber/20 bottom-20 -right-48" style="animation-delay: 2s;"></div>
+        <div class="orb w-[300px] h-[300px] bg-rich-blue/20 top-1/2 left-1/2 -translate-x-1/2" style="animation-delay: 4s;"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 md:px-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="reveal-on-scroll">
+                    <div
+                        class="inline-flex items-center gap-2 bg-vibrant-teal/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 border border-vibrant-teal/20"
+                    >
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-vibrant-teal opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-vibrant-teal"></span>
+                        </span>
+                        <span class="text-xs font-semibold text-vibrant-teal tracking-wide">CASE STUDIES</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-6">
+                        Real Results.
+                        <span class="shimmer-text">Real Clients.</span>
+                    </h1>
+
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                        See how ElevateEdge Consulting delivers strategic growth, operational clarity, and leadership alignment.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-deep-slate/30 rounded-full flex justify-center">
+                <div class="w-1 h-2 bg-vibrant-teal rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Main Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <!-- Featured Case Study -->
+            <div class="mb-24 reveal-on-scroll">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Image -->
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-vibrant-teal/30 to-rich-blue/30 rounded-3xl blur-2xl animate-pulse"></div>
+                        <div class="relative tilt-card">
+                            <img
+                                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="Leadership team meeting"
+                                class="rounded-2xl shadow-2xl w-full object-cover h-[400px] object-center"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+                        <div class="inline-flex items-center gap-2 bg-vibrant-teal/10 px-4 py-1.5 rounded-full mb-4">
+                            <span class="text-xs font-semibold text-vibrant-teal">FEATURED CASE STUDY</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-black mb-4 text-deep-slate">Aligning Leadership & Strategy for Scalable Growth</h2>
+
+                        <!-- Challenge -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-2 text-rich-blue">The Challenge</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                SuMa Monde Kapital had a bold growth vision, but their infrastructure and leadership development weren't keeping pace.
+                                The firm needed someone who could help align business functions, structure roles for scale, and support the onboarding
+                                of a new President of Acquisitions.
+                            </p>
+                        </div>
+
+                        <!-- Client Info -->
+                        <div class="bg-gray-50 rounded-xl p-4 mb-6">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <div class="text-sm text-gray-500">Client</div>
+                                    <div class="font-semibold text-deep-slate">SuMa Monde Kapital</div>
+                                </div>
+                                <div>
+                                    <div class="text-sm text-gray-500">Role</div>
+                                    <div class="font-semibold text-deep-slate">Advisory Partner for Executive Transition</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#case-study-detail" class="inline-flex items-center gap-2 text-rich-blue font-semibold group">
+                            Read full case study <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study Detail Section -->
+            <div id="case-study-detail" class="reveal-on-scroll mb-24">
+                <div class="grid md:grid-cols-2 gap-12 mb-16">
+                    <!-- Solution -->
+                    <div class="bg-gradient-to-br from-deep-slate/5 to-rich-blue/5 rounded-2xl p-8">
+                        <div class="w-14 h-14 bg-vibrant-teal/20 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-lightbulb text-2xl text-vibrant-teal"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-deep-slate">The Solution</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">Bravis provided hands-on advisory support through:</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-vibrant-teal text-sm"></i> Organizational alignment</li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-vibrant-teal text-sm"></i> Role clarity for future leadership
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-vibrant-teal text-sm"></i> Strategic relationship development
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-vibrant-teal text-sm"></i> Cultural and operational onboarding for the new executive
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Outcome -->
+                    <div class="bg-gradient-to-br from-rich-blue/5 to-amber/5 rounded-2xl p-8">
+                        <div class="w-14 h-14 bg-amber/20 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-line text-2xl text-amber"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-deep-slate">The Outcome</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-vibrant-teal mt-1"></i>
+                                <span class="text-gray-600">Successfully placed and supported new President of Acquisitions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-vibrant-teal mt-1"></i>
+                                <span class="text-gray-600">Streamlined decision-making process</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-vibrant-teal mt-1"></i>
+                                <span class="text-gray-600">Brought clarity and focus to SuMa's internal structure</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-vibrant-teal mt-1"></i>
+                                <span class="text-gray-600">Supported long-term growth planning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Testimonial -->
+                <TestimonialSlider />
+            </div>
+
+            <!-- More Case Studies Section -->
+            <div class="mt-24">
+                <div class="text-center mb-12 reveal-on-scroll">
+                    <span class="text-vibrant-teal font-mono text-xs tracking-wider bg-vibrant-teal/10 px-4 py-1.5 rounded-full">
+                        MORE SUCCESS STORIES
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-black mt-5">Additional <span class="text-rich-blue">Case Studies</span></h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Case Study 1 -->
+                    <div class="gradient-border tilt-card reveal-on-scroll">
+                        <div class="bg-white rounded-2xl overflow-hidden h-full hover:shadow-2xl transition-all duration-500">
+                            <img
+                                src="https://images.pexels.com/photos/4427818/pexels-photo-4427818.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                                alt="Manufacturing facility"
+                                class="w-full h-56 object-cover"
+                            />
+                            <div class="p-6">
+                                <div class="text-xs text-vibrant-teal font-semibold mb-2">MANUFACTURING</div>
+                                <h3 class="text-xl font-bold mb-2 text-deep-slate">Scaling Operations for Growth</h3>
+                                <p class="text-gray-500 text-sm mb-4">
+                                    How we helped a manufacturing company streamline operations and increase efficiency by 40%.
+                                </p>
+                                <a href="#" class="inline-flex items-center gap-2 text-rich-blue text-sm font-medium group">
+                                    Read case study <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="gradient-border tilt-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="bg-white rounded-2xl overflow-hidden h-full hover:shadow-2xl transition-all duration-500">
+                            <img
+                                src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                                alt="Private equity meeting"
+                                class="w-full h-56 object-cover"
+                            />
+                            <div class="p-6">
+                                <div class="text-xs text-vibrant-teal font-semibold mb-2">PRIVATE EQUITY</div>
+                                <h3 class="text-xl font-bold mb-2 text-deep-slate">Investor Readiness Preparation</h3>
+                                <p class="text-gray-500 text-sm mb-4">
+                                    Preparing a portfolio company for successful exit through operational excellence.
+                                </p>
+                                <a href="#" class="inline-flex items-center gap-2 text-rich-blue text-sm font-medium group">
+                                    Read case study <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center py-16 mt-12 reveal-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-black mb-4 text-deep-slate">Ready to be our next success story?</h2>
+                <p class="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">Let's discuss how we can help your business achieve similar results.</p>
+                <a
+                    href="/contact"
+                    class="group relative inline-flex items-center gap-3 bg-gradient-to-r from-rich-blue to-vibrant-teal text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
+                >
+                    <span class="relative z-10">Start the conversation</span>
+                    <i class="fas fa-arrow-right relative z-10 group-hover:translate-x-1 transition"></i>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-vibrant-teal to-amber opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    >
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
