@@ -36,14 +36,22 @@ import Footer from '../components/Footer.astro';
                 </p>
 
                 <div class="flex flex-wrap gap-4 justify-center">
-                    <div class="flex items-center gap-2 bg-white shadow-lg rounded-full px-6 py-3">
-                        <i class="fas fa-phone-alt text-vibrant-teal"></i>
-                        <span class="font-semibold text-deep-slate">(555) 123-4567</span>
-                    </div>
-                    <div class="flex items-center gap-2 bg-white shadow-lg rounded-full px-6 py-3">
-                        <i class="fab fa-linkedin text-vibrant-teal"></i>
+                    <a
+                        href="tel:14322548288"
+                        class="flex items-center gap-2 bg-white shadow-lg rounded-full px-6 py-3 hover:shadow-xl transition-all duration-300 group"
+                    >
+                        <i class="fas fa-phone-alt text-vibrant-teal group-hover:scale-110 transition"></i>
+                        <span class="font-semibold text-deep-slate">(432) 254-8288</span>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/bravis-brown-mba/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 bg-white shadow-lg rounded-full px-6 py-3 hover:shadow-xl transition-all duration-300 group"
+                    >
+                        <i class="fab fa-linkedin text-vibrant-teal group-hover:scale-110 transition"></i>
                         <span class="font-semibold text-deep-slate">Connect on LinkedIn</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -202,9 +210,13 @@ import Footer from '../components/Footer.astro';
                     <!-- Contact Info Card -->
                     <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow">
                         <h3 class="text-xl font-bold mb-5 text-deep-slate flex items-center gap-2">
-                            <i class="fas fa-comment-dots text-vibrant-teal"></i>
-                            Prefer to talk directly?
+                            <i class="fas fa-user text-vibrant-teal"></i>
+                            Bravis Brown
                         </h3>
+                        <div class="mb-4 pb-4 border-b border-gray-100">
+                            <p class="text-gray-500 text-sm">Principal Consultant</p>
+                            <p class="font-semibold text-deep-slate">ElevateEdge Consulting, LLC</p>
+                        </div>
 
                         <div class="space-y-4">
                             <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition cursor-pointer group">
@@ -214,8 +226,8 @@ import Footer from '../components/Footer.astro';
                                     <i class="fas fa-phone-alt text-vibrant-teal"></i>
                                 </div>
                                 <div>
-                                    <div class="text-sm text-gray-500">Call us</div>
-                                    <div class="font-semibold text-deep-slate">(555) 123-4567</div>
+                                    <div class="text-sm text-gray-500">Mobile</div>
+                                    <div class="font-semibold text-deep-slate">(432) 254-8288</div>
                                 </div>
                             </div>
 
@@ -226,8 +238,8 @@ import Footer from '../components/Footer.astro';
                                     <i class="fas fa-envelope text-vibrant-teal"></i>
                                 </div>
                                 <div>
-                                    <div class="text-sm text-gray-500">Email us</div>
-                                    <div class="font-semibold text-deep-slate">bravis@elevateedgetx.com</div>
+                                    <div class="text-sm text-gray-500">Email</div>
+                                    <div class="font-semibold text-deep-slate">Bravis@ElevateEdgeTX.com</div>
                                 </div>
                             </div>
 
@@ -238,19 +250,16 @@ import Footer from '../components/Footer.astro';
                                     <i class="fab fa-linkedin text-vibrant-teal"></i>
                                 </div>
                                 <div>
-                                    <div class="text-sm text-gray-500">Connect on LinkedIn</div>
-                                    <div class="font-semibold text-deep-slate">ElevateEdge Consulting</div>
+                                    <div class="text-sm text-gray-500">LinkedIn</div>
+                                    <div class="font-semibold text-deep-slate">Bravis Brown, MBA</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mt-6 pt-6 border-t border-gray-200">
-                            <div class="flex items-start gap-2">
-                                <i class="fas fa-quote-left text-vibrant-teal/30 mt-1"></i>
-                                <p class="text-sm text-gray-500 italic">
-                                    Every engagement starts with a conversation—where we get clear on your goals, challenges, and opportunities.
-                                </p>
-                            </div>
+                            <a href="https://ElevateEdgeTX.com" target="_blank" class="text-sm text-vibrant-teal hover:underline">
+                                www.ElevateEdgeTX.com
+                            </a>
                         </div>
                     </div>
 
