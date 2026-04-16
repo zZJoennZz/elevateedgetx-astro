@@ -37,6 +37,7 @@ public/        # Static assets
 
 - **Astro** - Static site generator
 - **Node.js** - JavaScript runtime
+- **TailwindCSS** - Styling
 
 ## Contributing
 
